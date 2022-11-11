@@ -43,7 +43,7 @@ module.exports = {
                 placa
             };
         }else{
-            json.error = "Não foi possível cadastrar";
+            json.error = "Informe todos os dados.";
         }
         res.json(json);
     },
@@ -63,7 +63,7 @@ module.exports = {
                 placa
             };
         }else{
-            json.error = "Não foi possível realizar a alteração.";
+            json.error = "Preencha todos os campos.";
         }
         res.json(json);
     },

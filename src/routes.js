@@ -10,8 +10,8 @@ const carroController = require('./controllers/carroController');
 
 router.get('/carros', carroController.buscarTodos);
 router.get('/carro/:id', carroController.buscarCarro);
-//router.post('/carro', carroController.inserirCarro);
-//router.put('/carro/:id', carroController.alterarCarro);
-//router.delete('/carro/:id', carroController.excluirCarro);
+router.post('/inserircarro', carroController.inserirCarro);
+router.put('/carro/:id', carroController.alterarCarro);
+router.delete('/carro/:id', carroController.excluirCarro);
 
 module.exports = router;
